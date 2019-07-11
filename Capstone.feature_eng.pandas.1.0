@@ -1,0 +1,365 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "collapsed": true
+   },
+   "source": [
+    "\n",
+    "# Advanced Data Science Capstone\n",
+    "\n",
+    "## Correlation of air pollution and Prevalence of Heart failures in Germany  \n",
+    "\n",
+    "## Feature Creation and Feature engineering"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### The deliverables\n",
+    "The deliverables of the current stage:\n",
+    "\n",
+    " - Pandas dataframe with disease prevalence column(s), county id, and some features extracted from air pollution data series for sensors located in corresponding county\n",
+    "\n",
+    "###  Feature creation\n",
+    "The basic features for air pollution levels are\n",
+    "\n",
+    " - Number of hours when pollutant concentration exceeded some certain value\n",
+    " - Mean or Median concentration of the pollutant\n",
+    " \n",
+    "###  Feature quality check\n",
+    "\n",
+    " - Feature variance\n",
+    " - Feature cross-correlation matrix\n",
+    " \n",
+    " First of all the necessary libraries and the datasets preprocessed at the ETL stage loaded:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Libreries:\n",
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import re\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 116,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Files:\n",
+    "SensorLocation = pd.read_csv('Capstone.ETL/Capstone.etl.SensorLocationCSV.1.0.csv')\n",
+    "dfHeart = pd.read_csv('Capstone.ETL/Capstone.etl.dfHeartCSV.1.0.csv')\n",
+    "dffAll = pd.read_csv('Capstone.ETL/Capstone.etl.wideCSV.1.0.gzip', compression='gzip', index_col=None)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "###  Feature creation\n",
+    "\n",
+    "Now let's create some basic features, illustrating some integral quantities of air pollution over the year.\n",
+    "For the start the following features will be generated:\n",
+    " - Average value of every kind pollutant over the year (average over all sensors within the county)\n",
+    " - 75th percentile of every kind pollutant over the year, that is also troportional to the number of days when pollutant concentration exceeded some certain value\n",
+    " \n",
+    "The first quantity can be easily extracted using *describe* method of the dataframe:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 136,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "dffAllSummary=dffAll.describe()\n",
+    "\n",
+    "def MeanByPollutantCountyID(Pollutant, CountyID):\n",
+    "    PollutantMasc='^.{8}' + Pollutant + '_'\n",
+    "# collecting set of all sensors in the given county:    \n",
+    "    CountyStationSet = SensorLocation.loc[SensorLocation['countyid']==CountyID]['SensorID'].tolist()\n",
+    "    if CountyStationSet == []:\n",
+    "        return(np.nan)\n",
+    "    try:\n",
+    "        dffAllPollutantCountyID = dffAllSummary[[col for col in dffAllSummary.columns if re.search('(^.{7})',col).group(1) in CountyStationSet]].filter(regex=PollutantMasc,axis=1)\n",
+    "        return(dffAllPollutantCountyID.loc[['mean']].mean(axis=1))\n",
+    "    except:    \n",
+    "        return(np.nan)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 138,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ListOfPollutants = ['CO','NO','NO2','NOx','O3','PM1','PM2', 'PM10', 'SO2', 'CHB', 'CH4', 'C8H10', 'CHT', 'CO2']\n",
+    "\n",
+    "for pollutant in ListOfPollutants:\n",
+    "    ColIndex=pollutant+'mean'\n",
+    "    dfHeart[ColIndex] =dfHeart.apply(lambda x: MeanByPollutantCountyID(pollutant, x['Regions-ID']), axis=1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 143,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "Region          0\n",
+       "Regions-ID      0\n",
+       "KV              0\n",
+       "Kreistyp        0\n",
+       "Wert            0\n",
+       "Bundeswert      0\n",
+       "COmean        336\n",
+       "NOmean        186\n",
+       "NO2mean       185\n",
+       "NOxmean       212\n",
+       "O3mean        206\n",
+       "PM1mean       197\n",
+       "PM2mean       297\n",
+       "PM10mean      402\n",
+       "SO2mean       314\n",
+       "CHBmean       385\n",
+       "CH4mean       392\n",
+       "C8H10mean     398\n",
+       "CHTmean       385\n",
+       "CO2mean       396\n",
+       "dtype: int64"
+      ]
+     },
+     "execution_count": 143,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#dfHeart.head(53)\n",
+    "dfHeart.isna().sum()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "From the table above one can see, that only 6 pollutants (*NO, NO2, NOx, O3, PM1, PM2*) were measured in about a half of german counties (total number of counties mentioned in the *heart failures* dataset is 402). Let's take a look, in how many counties all 6 pollutants were measured simultaneously:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 160,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "FeatureSetDense = dfHeart[['Regions-ID','Wert','NOmean','NO2mean','NOxmean','O3mean','PM1mean','PM2mean']].dropna()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 161,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>Regions-ID</th>\n",
+       "      <th>Wert</th>\n",
+       "      <th>NOmean</th>\n",
+       "      <th>NO2mean</th>\n",
+       "      <th>NOxmean</th>\n",
+       "      <th>O3mean</th>\n",
+       "      <th>PM1mean</th>\n",
+       "      <th>PM2mean</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>count</th>\n",
+       "      <td>77.000000</td>\n",
+       "      <td>77.000000</td>\n",
+       "      <td>77.000000</td>\n",
+       "      <td>77.000000</td>\n",
+       "      <td>77.000000</td>\n",
+       "      <td>77.000000</td>\n",
+       "      <td>77.000000</td>\n",
+       "      <td>77.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>mean</th>\n",
+       "      <td>8284.051948</td>\n",
+       "      <td>3.108182</td>\n",
+       "      <td>12.638955</td>\n",
+       "      <td>20.926512</td>\n",
+       "      <td>40.270868</td>\n",
+       "      <td>46.768694</td>\n",
+       "      <td>17.206027</td>\n",
+       "      <td>12.132682</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>std</th>\n",
+       "      <td>4219.959793</td>\n",
+       "      <td>0.984459</td>\n",
+       "      <td>11.427597</td>\n",
+       "      <td>10.739108</td>\n",
+       "      <td>27.906436</td>\n",
+       "      <td>7.054695</td>\n",
+       "      <td>2.976642</td>\n",
+       "      <td>2.037527</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>min</th>\n",
+       "      <td>1002.000000</td>\n",
+       "      <td>1.500000</td>\n",
+       "      <td>0.494341</td>\n",
+       "      <td>4.988657</td>\n",
+       "      <td>6.654459</td>\n",
+       "      <td>33.445765</td>\n",
+       "      <td>9.247641</td>\n",
+       "      <td>6.201523</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>25%</th>\n",
+       "      <td>5114.000000</td>\n",
+       "      <td>2.480000</td>\n",
+       "      <td>2.239484</td>\n",
+       "      <td>10.612277</td>\n",
+       "      <td>14.034165</td>\n",
+       "      <td>40.733169</td>\n",
+       "      <td>15.595231</td>\n",
+       "      <td>10.908514</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>50%</th>\n",
+       "      <td>7312.000000</td>\n",
+       "      <td>2.870000</td>\n",
+       "      <td>9.896502</td>\n",
+       "      <td>21.316858</td>\n",
+       "      <td>36.684413</td>\n",
+       "      <td>46.352579</td>\n",
+       "      <td>17.482639</td>\n",
+       "      <td>12.080113</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>75%</th>\n",
+       "      <td>12064.000000</td>\n",
+       "      <td>3.480000</td>\n",
+       "      <td>19.421071</td>\n",
+       "      <td>29.419342</td>\n",
+       "      <td>60.155132</td>\n",
+       "      <td>50.845808</td>\n",
+       "      <td>19.138329</td>\n",
+       "      <td>13.435197</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>max</th>\n",
+       "      <td>16076.000000</td>\n",
+       "      <td>6.160000</td>\n",
+       "      <td>39.808819</td>\n",
+       "      <td>42.477908</td>\n",
+       "      <td>100.943063</td>\n",
+       "      <td>71.032766</td>\n",
+       "      <td>23.129197</td>\n",
+       "      <td>17.410042</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "         Regions-ID       Wert     NOmean    NO2mean     NOxmean     O3mean  \\\n",
+       "count     77.000000  77.000000  77.000000  77.000000   77.000000  77.000000   \n",
+       "mean    8284.051948   3.108182  12.638955  20.926512   40.270868  46.768694   \n",
+       "std     4219.959793   0.984459  11.427597  10.739108   27.906436   7.054695   \n",
+       "min     1002.000000   1.500000   0.494341   4.988657    6.654459  33.445765   \n",
+       "25%     5114.000000   2.480000   2.239484  10.612277   14.034165  40.733169   \n",
+       "50%     7312.000000   2.870000   9.896502  21.316858   36.684413  46.352579   \n",
+       "75%    12064.000000   3.480000  19.421071  29.419342   60.155132  50.845808   \n",
+       "max    16076.000000   6.160000  39.808819  42.477908  100.943063  71.032766   \n",
+       "\n",
+       "         PM1mean    PM2mean  \n",
+       "count  77.000000  77.000000  \n",
+       "mean   17.206027  12.132682  \n",
+       "std     2.976642   2.037527  \n",
+       "min     9.247641   6.201523  \n",
+       "25%    15.595231  10.908514  \n",
+       "50%    17.482639  12.080113  \n",
+       "75%    19.138329  13.435197  \n",
+       "max    23.129197  17.410042  "
+      ]
+     },
+     "execution_count": 161,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "FeatureSetDense.describe()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "From the table above one can conclude, that despite only about a fifth of german counties are included into the **FeatureSetDense** dataset, all the measured quantities have good variability. In order to illustrate it, the histogram is plotted:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
