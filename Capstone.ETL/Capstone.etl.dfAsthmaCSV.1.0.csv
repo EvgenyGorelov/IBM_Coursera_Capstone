@@ -1,0 +1,403 @@
+Region,Regions-ID,KV,Kreistyp,Wert,Bundeswert
+Eisenach,16056,TH,Ländliches Umland,8.9,5.7
+Sonneberg,16072,TH,Ländlicher Raum,8.7,5.7
+Ammerland,3451,NI,Verdichtetes Umland,8.5,5.7
+Saalfeld-Rudolstadt,16073,TH,Ländlicher Raum,8.3,5.7
+Gifhorn,3151,NI,Ländlicher Raum,8.2,5.7
+Oldenburg,3403,NI,Kernstädte,8.2,5.7
+Schleswig-Flensburg,1059,SH,Ländlicher Raum,8.1,5.7
+Osterode,3156,NI,Ländliches Umland,8.1,5.7
+Main-Tauber-Kreis,8128,BW,Ländlicher Raum,8.0,5.7
+Warendorf,5570,WL,Verdichtetes Umland,7.9,5.7
+Offenbach,6413,HE,Kernstädte,7.9,5.7
+Flensburg,1001,SH,Ländlicher Raum,7.7,5.7
+Wilhelmshaven,3405,NI,Verdichtetes Umland,7.7,5.7
+Leer,3457,NI,Ländliches Umland,7.7,5.7
+Hagen,5914,WL,Kernstädte,7.7,5.7
+Lk.Fürth,9573,BY,Verdichtetes Umland,7.7,5.7
+Hildburghausen,16069,TH,Ländlicher Raum,7.7,5.7
+Nordhausen,16062,TH,Ländlicher Raum,7.7,5.7
+Vulkaneifel,7233,RP,Ländlicher Raum,7.5,5.7
+Suhl,16054,TH,Ländlicher Raum,7.5,5.7
+Cloppenburg,3453,NI,Ländlicher Raum,7.4,5.7
+Rhein-Kreis Neuss,5162,NO,Verdichtetes Umland,7.4,5.7
+Salzgitter,3102,NI,Kernstädte,7.3,5.7
+Bochum,5911,WL,Kernstädte,7.3,5.7
+Werra-Meißner-Kreis,6636,HE,Ländliches Umland,7.3,5.7
+Lk.Kaiserslautern,7335,RP,Verdichtetes Umland,7.3,5.7
+Nienburg,3256,NI,Ländlicher Raum,7.2,5.7
+Wuppertal,5124,NO,Kernstädte,7.2,5.7
+Mönchengladbach,5116,NO,Kernstädte,7.2,5.7
+Solingen,5122,NO,Kernstädte,7.2,5.7
+Saarlouis,10044,SL,Verdichtetes Umland,7.2,5.7
+Altenburger Land,16077,TH,Ländliches Umland,7.2,5.7
+Dithmarschen,1051,SH,Ländlicher Raum,7.1,5.7
+Friesland,3455,NI,Verdichtetes Umland,7.1,5.7
+Uelzen,3360,NI,Ländlicher Raum,7.1,5.7
+Siegen-Wittgenstein,5970,WL,Verdichtetes Umland,7.1,5.7
+Ennepe-Ruhr-Kreis,5954,WL,Verdichtetes Umland,7.1,5.7
+Merzig-Wadern,10042,SL,Verdichtetes Umland,7.1,5.7
+Barnim,12060,BB,Ländliches Umland,7.1,5.7
+Wartburgkreis,16063,TH,Ländliches Umland,7.1,5.7
+Northeim,3155,NI,Ländlicher Raum,7.0,5.7
+Steinfurt,5566,WL,Verdichtetes Umland,7.0,5.7
+Nordfriesland,1054,SH,Ländlicher Raum,6.9,5.7
+Grafschaft Bentheim,3456,NI,Ländlicher Raum,6.9,5.7
+Gelsenkirchen,5513,WL,Kernstädte,6.9,5.7
+Düren,5358,NO,Verdichtetes Umland,6.9,5.7
+Ahrweiler,7131,RP,Ländliches Umland,6.9,5.7
+Aurich,3452,NI,Ländliches Umland,6.8,5.7
+Dortmund,5913,WL,Kernstädte,6.8,5.7
+Leverkusen,5316,NO,Kernstädte,6.8,5.7
+Lk.Kassel,6633,HE,Verdichtetes Umland,6.8,5.7
+Eifelkreis Bitburg-Prüm,7232,RP,Ländlicher Raum,6.8,5.7
+Straubing,9263,BY,Ländlicher Raum,6.8,5.7
+Erfurt,16051,TH,Kernstädte,6.8,5.7
+Leipzig,14713,SN,Kernstädte,6.8,5.7
+Wesermarsch,3461,NI,Ländlicher Raum,6.7,5.7
+Emsland,3454,NI,Ländlicher Raum,6.7,5.7
+Region Hannover,3241,NI,Verdichtetes Umland,6.7,5.7
+Rheinisch-Bergischer Kr.,5378,NO,Verdichtetes Umland,6.7,5.7
+Gießen,6531,HE,Verdichtetes Umland,6.7,5.7
+Kusel,7336,RP,Ländliches Umland,6.7,5.7
+Bamberg,9461,BY,Ländliches Umland,6.7,5.7
+Kitzingen,9675,BY,Ländliches Umland,6.7,5.7
+Schmalkalden-Meiningen,16066,TH,Ländlicher Raum,6.7,5.7
+Lk.Offenbach,6438,HE,Verdichtetes Umland,6.6,5.7
+Marburg-Biedenkopf,6534,HE,Ländliches Umland,6.6,5.7
+Südwestpfalz,7340,RP,Ländliches Umland,6.6,5.7
+Fürth,9563,BY,Kernstädte,6.6,5.7
+Augsburg,9761,BY,Kernstädte,6.6,5.7
+Saarbrücken,10041,SL,Verdichtetes Umland,6.6,5.7
+Saarpfalz-Kreis,10045,SL,Verdichtetes Umland,6.6,5.7
+Chemnitz,14511,SN,Kernstädte,6.6,5.7
+Hamburg,2000,HH,Kernstädte,6.5,5.7
+Heidekreis,3358,NI,Ländlicher Raum,6.5,5.7
+Mettmann,5158,NO,Verdichtetes Umland,6.5,5.7
+Remscheid,5120,NO,Kernstädte,6.5,5.7
+Schwalm-Eder-Kreis,6634,HE,Ländliches Umland,6.5,5.7
+Lahn-Dill-Kreis,6532,HE,Verdichtetes Umland,6.5,5.7
+Bergstraße,6431,HE,Verdichtetes Umland,6.5,5.7
+Mainz,7315,RP,Kernstädte,6.5,5.7
+Bad Kissingen,9672,BY,Ländlicher Raum,6.5,5.7
+Günzburg,9774,BY,Verdichtetes Umland,6.5,5.7
+Dresden,14612,SN,Kernstädte,6.5,5.7
+Steinburg,1061,SH,Ländlicher Raum,6.4,5.7
+Verden,3361,NI,Ländliches Umland,6.4,5.7
+Emden,3402,NI,Ländliches Umland,6.4,5.7
+Unna,5978,WL,Verdichtetes Umland,6.4,5.7
+Essen,5113,NO,Kernstädte,6.4,5.7
+Bonn,5314,NO,Kernstädte,6.4,5.7
+Rhein-Sieg-Kreis,5382,NO,Verdichtetes Umland,6.4,5.7
+Kassel,6611,HE,Kernstädte,6.4,5.7
+Speyer,7318,RP,Verdichtetes Umland,6.4,5.7
+Neuwied,7138,RP,Verdichtetes Umland,6.4,5.7
+Amberg,9361,BY,Ländlicher Raum,6.4,5.7
+Lk.Bamberg,9471,BY,Ländliches Umland,6.4,5.7
+Oberhavel,12065,BB,Ländlicher Raum,6.4,5.7
+Ilm-Kreis,16070,TH,Ländliches Umland,6.4,5.7
+Münster,5515,WL,Kernstädte,6.3,5.7
+Heinsberg,5370,NO,Verdichtetes Umland,6.3,5.7
+Rhein-Erft-Kreis,5362,NO,Verdichtetes Umland,6.3,5.7
+Köln,5315,NO,Kernstädte,6.3,5.7
+Wiesbaden,6414,HE,Kernstädte,6.3,5.7
+Rheingau-Taunus-Kr.,6439,HE,Verdichtetes Umland,6.3,5.7
+München,9162,BY,Kernstädte,6.3,5.7
+Fürstenfeldbruck,9179,BY,Verdichtetes Umland,6.3,5.7
+Dingolfing-Landau,9279,BY,Ländliches Umland,6.3,5.7
+Lübeck,1003,SH,Kernstädte,6.2,5.7
+Lk.Osnabrück,3459,NI,Ländliches Umland,6.2,5.7
+Vechta,3460,NI,Ländliches Umland,6.2,5.7
+Lk.Oldenburg,3458,NI,Ländliches Umland,6.2,5.7
+Goslar,3153,NI,Ländliches Umland,6.2,5.7
+Wolfenbüttel,3158,NI,Ländliches Umland,6.2,5.7
+Wittmund,3462,NI,Ländlicher Raum,6.2,5.7
+Herford,5758,WL,Verdichtetes Umland,6.2,5.7
+Gütersloh,5754,WL,Verdichtetes Umland,6.2,5.7
+Viersen,5166,NO,Verdichtetes Umland,6.2,5.7
+Städteregion Aachen,5334,NO,Verdichtetes Umland,6.2,5.7
+Main-Kinzig-Kreis,6435,HE,Verdichtetes Umland,6.2,5.7
+Limburg-Weilburg,6533,HE,Verdichtetes Umland,6.2,5.7
+Kaiserslautern,7312,RP,Verdichtetes Umland,6.2,5.7
+Ludwigshafen,7314,RP,Kernstädte,6.2,5.7
+Westerwaldkreis,7143,RP,Verdichtetes Umland,6.2,5.7
+Altenkirchen,7132,RP,Verdichtetes Umland,6.2,5.7
+Mayen-Koblenz,7137,RP,Verdichtetes Umland,6.2,5.7
+Lk.Coburg,9473,BY,Ländliches Umland,6.2,5.7
+Lk.Augsburg,9772,BY,Verdichtetes Umland,6.2,5.7
+Teltow-Fläming,12072,BB,Ländlicher Raum,6.2,5.7
+Diepholz,3251,NI,Ländliches Umland,6.1,5.7
+Göttingen,3152,NI,Verdichtetes Umland,6.1,5.7
+Osnabrück,3404,NI,Kernstädte,6.1,5.7
+Braunschweig,3101,NI,Kernstädte,6.1,5.7
+Hamm,5915,WL,Kernstädte,6.1,5.7
+Groß-Gerau,6433,HE,Verdichtetes Umland,6.1,5.7
+Rhein-Pfalz-Kreis,7338,RP,Verdichtetes Umland,6.1,5.7
+Pirmasens,7317,RP,Ländliches Umland,6.1,5.7
+Koblenz,7111,RP,Kernstädte,6.1,5.7
+Enzkreis,8236,BW,Verdichtetes Umland,6.1,5.7
+Lichtenfels,9478,BY,Ländliches Umland,6.1,5.7
+Landshut,9261,BY,Ländliches Umland,6.1,5.7
+Amberg-Sulzbach,9371,BY,Ländlicher Raum,6.1,5.7
+Straubing-Bogen,9278,BY,Ländlicher Raum,6.1,5.7
+Neunkirchen,10043,SL,Verdichtetes Umland,6.1,5.7
+Hildesheim,3254,NI,Verdichtetes Umland,6.0,5.7
+Vogelsbergkreis,6535,HE,Ländlicher Raum,6.0,5.7
+Main-Taunus-Kreis,6436,HE,Verdichtetes Umland,6.0,5.7
+Donnersbergkreis,7333,RP,Ländliches Umland,6.0,5.7
+Rhein-Neckar-Kreis,8226,BW,Verdichtetes Umland,6.0,5.7
+Neckar-Odenwald-Kr.,8225,BW,Ländliches Umland,6.0,5.7
+Neustadt-Bad Windsheim,9575,BY,Ländlicher Raum,6.0,5.7
+Lk.Würzburg,9679,BY,Verdichtetes Umland,6.0,5.7
+Potsdam-Mittelmark,12069,BB,Ländlicher Raum,6.0,5.7
+Potsdam,12054,BB,Kernstädte,6.0,5.7
+Oder-Spree,12067,BB,Ländliches Umland,6.0,5.7
+Ostholstein,1055,SH,Ländliches Umland,5.9,5.7
+Segeberg,1060,SH,Ländliches Umland,5.9,5.7
+Kiel,1002,SH,Kernstädte,5.9,5.7
+Cuxhaven,3352,NI,Ländlicher Raum,5.9,5.7
+Paderborn,5774,WL,Verdichtetes Umland,5.9,5.7
+Herne,5916,WL,Kernstädte,5.9,5.7
+Mülheim,5117,NO,Kernstädte,5.9,5.7
+Frankfurt,6412,HE,Kernstädte,5.9,5.7
+Waldeck-Frankenberg,6635,HE,Ländlicher Raum,5.9,5.7
+Bad Dürkheim,7332,RP,Verdichtetes Umland,5.9,5.7
+Frankenthal,7311,RP,Verdichtetes Umland,5.9,5.7
+Mainz-Bingen,7339,RP,Verdichtetes Umland,5.9,5.7
+Schwabach,9565,BY,Ländliches Umland,5.9,5.7
+Würzburg,9663,BY,Kernstädte,5.9,5.7
+Nürnberg,9564,BY,Kernstädte,5.9,5.7
+Kronach,9476,BY,Ländliches Umland,5.9,5.7
+Berlin,11000,BE,Kernstädte,5.9,5.7
+Rendsburg-Eckernförde,1058,SH,Ländliches Umland,5.8,5.7
+Bremerhaven,4012,HB,Kernstädte,5.8,5.7
+Wolfsburg,3103,NI,Kernstädte,5.8,5.7
+Harburg,3353,NI,Verdichtetes Umland,5.8,5.7
+Lüneburg,3355,NI,Ländlicher Raum,5.8,5.7
+Delmenhorst,3401,NI,Ländliches Umland,5.8,5.7
+Peine,3157,NI,Verdichtetes Umland,5.8,5.7
+Olpe,5966,WL,Verdichtetes Umland,5.8,5.7
+Lippe,5766,WL,Verdichtetes Umland,5.8,5.7
+Bielefeld,5711,WL,Kernstädte,5.8,5.7
+Borken,5554,WL,Verdichtetes Umland,5.8,5.7
+Duisburg,5112,NO,Kernstädte,5.8,5.7
+Euskirchen,5366,NO,Verdichtetes Umland,5.8,5.7
+Alzey-Worms,7331,RP,Verdichtetes Umland,5.8,5.7
+Zweibrücken,7320,RP,Ländliches Umland,5.8,5.7
+Hohenlohekreis,8126,BW,Ländliches Umland,5.8,5.7
+Lk.Heilbronn,8125,BW,Verdichtetes Umland,5.8,5.7
+Rottal-Inn,9277,BY,Ländlicher Raum,5.8,5.7
+Main-Spessart,9677,BY,Ländlicher Raum,5.8,5.7
+Aichach-Friedberg,9771,BY,Ländliches Umland,5.8,5.7
+Berchtesgadener Land,9172,BY,Ländliches Umland,5.8,5.7
+St.Wendel,10046,SL,Verdichtetes Umland,5.8,5.7
+Rostock,13003,MV,Kernstädte,5.8,5.7
+Märkisch-Oderland,12064,BB,Ländlicher Raum,5.8,5.7
+Ostprignitz-Ruppin,12068,BB,Ländlicher Raum,5.8,5.7
+Greiz,16076,TH,Verdichtetes Umland,5.8,5.7
+Nordsachsen,14730,SN,Ländlicher Raum,5.8,5.7
+Plön,1057,SH,Ländliches Umland,5.7,5.7
+Herzogtum Lauenburg,1053,SH,Ländliches Umland,5.7,5.7
+Bremen,4011,HB,Kernstädte,5.7,5.7
+Hameln-Pyrmont,3252,NI,Verdichtetes Umland,5.7,5.7
+Lüchow-Dannenberg,3354,NI,Ländlicher Raum,5.7,5.7
+Wetteraukreis,6440,HE,Verdichtetes Umland,5.7,5.7
+Fulda,6631,HE,Ländliches Umland,5.7,5.7
+Bad Kreuznach,7133,RP,Ländliches Umland,5.7,5.7
+Mannheim,8222,BW,Kernstädte,5.7,5.7
+Pforzheim,8231,BW,Kernstädte,5.7,5.7
+Oberallgäu,9780,BY,Ländlicher Raum,5.7,5.7
+Kaufbeuren,9762,BY,Ländlicher Raum,5.7,5.7
+Lk.Schweinfurt,9678,BY,Ländliches Umland,5.7,5.7
+Schweinfurt,9662,BY,Ländliches Umland,5.7,5.7
+Schwerin,13004,MV,Ländliches Umland,5.7,5.7
+Halle,15002,ST,Kernstädte,5.7,5.7
+Gotha,16067,TH,Ländliches Umland,5.7,5.7
+Meißen,14627,SN,Ländliches Umland,5.7,5.7
+Lk.Leipzig,14729,SN,Ländliches Umland,5.7,5.7
+Märkischer Kreis,5962,WL,Verdichtetes Umland,5.6,5.7
+Krefeld,5114,NO,Kernstädte,5.6,5.7
+Lk.Karlsruhe,8215,BW,Verdichtetes Umland,5.6,5.7
+Dillingen,9773,BY,Ländliches Umland,5.6,5.7
+Erding,9177,BY,Ländliches Umland,5.6,5.7
+Lk.Landshut,9274,BY,Ländliches Umland,5.6,5.7
+Donau-Ries,9779,BY,Ländliches Umland,5.6,5.7
+Cottbus,12052,BB,Kernstädte,5.6,5.7
+Stendal,15090,ST,Ländlicher Raum,5.6,5.7
+Saale-Holzland-Kreis,16074,TH,Ländliches Umland,5.6,5.7
+Pinneberg,1056,SH,Verdichtetes Umland,5.5,5.7
+Helmstedt,3154,NI,Ländliches Umland,5.5,5.7
+Soest,5974,WL,Verdichtetes Umland,5.5,5.7
+Düsseldorf,5111,NO,Kernstädte,5.5,5.7
+Odenwaldkreis,6437,HE,Verdichtetes Umland,5.5,5.7
+Rhein-Lahn-Kreis,7141,RP,Verdichtetes Umland,5.5,5.7
+Roth,9576,BY,Ländliches Umland,5.5,5.7
+Regensburg,9362,BY,Kernstädte,5.5,5.7
+Lk.Regensburg,9375,BY,Ländliches Umland,5.5,5.7
+Burgenlandkreis,15084,ST,Ländliches Umland,5.5,5.7
+Kyffhäuserkreis,16065,TH,Ländlicher Raum,5.5,5.7
+Gera,16052,TH,Verdichtetes Umland,5.5,5.7
+Saale-Orla-Kreis,16075,TH,Ländlicher Raum,5.5,5.7
+Vogtlandkreis,14523,SN,Ländliches Umland,5.5,5.7
+Neumünster,1004,SH,Ländliches Umland,5.4,5.7
+Stormarn,1062,SH,Verdichtetes Umland,5.4,5.7
+Schaumburg,3257,NI,Verdichtetes Umland,5.4,5.7
+Stade,3359,NI,Ländliches Umland,5.4,5.7
+Celle,3351,NI,Ländlicher Raum,5.4,5.7
+Höxter,5762,WL,Ländliches Umland,5.4,5.7
+Oberhausen,5119,NO,Kernstädte,5.4,5.7
+Hochtaunuskreis,6434,HE,Verdichtetes Umland,5.4,5.7
+Cochem-Zell,7135,RP,Ländlicher Raum,5.4,5.7
+Bernkastel-Wittlich,7231,RP,Ländlicher Raum,5.4,5.7
+Rhein-Hunsrück-Kreis,7140,RP,Ländliches Umland,5.4,5.7
+Trier-Saarburg,7235,RP,Ländliches Umland,5.4,5.7
+Heilbronn,8121,BW,Kernstädte,5.4,5.7
+Kempten,9763,BY,Ländlicher Raum,5.4,5.7
+Coburg,9463,BY,Ländliches Umland,5.4,5.7
+Hof,9464,BY,Ländliches Umland,5.4,5.7
+Lk.Aschaffenburg,9671,BY,Verdichtetes Umland,5.4,5.7
+Erlangen-Höchstadt,9572,BY,Verdichtetes Umland,5.4,5.7
+Brandenburg,12051,BB,Ländlicher Raum,5.4,5.7
+Anhalt-Bitterfeld,15082,ST,Verdichtetes Umland,5.4,5.7
+Jena,16053,TH,Kernstädte,5.4,5.7
+Sächsische Schweiz-Osterzgebirge,14628,SN,Ländliches Umland,5.4,5.7
+Rotenburg,3357,NI,Ländlicher Raum,5.3,5.7
+Osterholz,3356,NI,Verdichtetes Umland,5.3,5.7
+Bottrop,5512,WL,Kernstädte,5.3,5.7
+Wesel,5170,NO,Verdichtetes Umland,5.3,5.7
+Hersfeld-Rotenburg,6632,HE,Ländlicher Raum,5.3,5.7
+Darmstadt-Dieburg,6432,HE,Verdichtetes Umland,5.3,5.7
+Neustadt,7316,RP,Verdichtetes Umland,5.3,5.7
+Worms,7319,RP,Verdichtetes Umland,5.3,5.7
+Rastatt,8216,BW,Verdichtetes Umland,5.3,5.7
+Ludwigsburg,8118,BW,Verdichtetes Umland,5.3,5.7
+Heidelberg,8221,BW,Kernstädte,5.3,5.7
+Lk.München,9184,BY,Verdichtetes Umland,5.3,5.7
+Erlangen,9562,BY,Kernstädte,5.3,5.7
+Mühldorf,9183,BY,Ländliches Umland,5.3,5.7
+Lk.Hof,9475,BY,Ländliches Umland,5.3,5.7
+Holzminden,3255,NI,Ländlicher Raum,5.2,5.7
+Recklinghausen,5562,WL,Verdichtetes Umland,5.2,5.7
+Kleve,5154,NO,Verdichtetes Umland,5.2,5.7
+Germersheim,7334,RP,Verdichtetes Umland,5.2,5.7
+Birkenfeld,7134,RP,Ländlicher Raum,5.2,5.7
+Trier,7211,RP,Kernstädte,5.2,5.7
+Rhön-Grabfeld,9673,BY,Ländlicher Raum,5.2,5.7
+Miltenberg,9676,BY,Verdichtetes Umland,5.2,5.7
+Neuburg-Schrobenhausen,9185,BY,Ländlicher Raum,5.2,5.7
+Ebersberg,9175,BY,Verdichtetes Umland,5.2,5.7
+Wunsiedel,9479,BY,Ländliches Umland,5.2,5.7
+Havelland,12063,BB,Ländlicher Raum,5.2,5.7
+Magdeburg,15003,ST,Kernstädte,5.2,5.7
+Saalekreis,15088,ST,Ländliches Umland,5.2,5.7
+Dessau-Roßlau,15001,ST,Verdichtetes Umland,5.2,5.7
+Sömmerda,16068,TH,Ländlicher Raum,5.2,5.7
+Hochsauerlandkreis,5958,WL,Ländliches Umland,5.1,5.7
+Dachau,9174,BY,Verdichtetes Umland,5.1,5.7
+Aschaffenburg,9661,BY,Verdichtetes Umland,5.1,5.7
+Regen,9276,BY,Ländlicher Raum,5.1,5.7
+Dahme-Spreewald,12061,BB,Ländlicher Raum,5.1,5.7
+Elbe-Elster,12062,BB,Ländlicher Raum,5.1,5.7
+Minden-Lübbecke,5770,WL,Verdichtetes Umland,5.0,5.7
+Coesfeld,5558,WL,Verdichtetes Umland,5.0,5.7
+Oberbergischer Kreis,5374,NO,Verdichtetes Umland,5.0,5.7
+Südliche Weinstr.,7337,RP,Verdichtetes Umland,5.0,5.7
+Calw,8235,BW,Verdichtetes Umland,5.0,5.7
+Rems-Murr-Kreis,8119,BW,Verdichtetes Umland,5.0,5.7
+Haßberge,9674,BY,Ländlicher Raum,5.0,5.7
+Altötting,9171,BY,Verdichtetes Umland,5.0,5.7
+Bayreuth,9462,BY,Ländlicher Raum,5.0,5.7
+Vorpommern-Greifswald,13075,MV,Ländlicher Raum,5.0,5.7
+Uckermark,12073,BB,Ländlicher Raum,5.0,5.7
+Mansfeld-Südharz,15087,ST,Ländlicher Raum,5.0,5.7
+Mittelsachsen,14522,SN,Ländliches Umland,5.0,5.7
+Bautzen,14625,SN,Ländliches Umland,5.0,5.7
+Darmstadt,6411,HE,Kernstädte,4.9,5.7
+Freiburg,8311,BW,Kernstädte,4.9,5.7
+Weißenburg-Gunzenhausen,9577,BY,Ländlicher Raum,4.9,5.7
+Pfaffenhofen,9186,BY,Ländliches Umland,4.9,5.7
+Lk.Bayreuth,9472,BY,Ländlicher Raum,4.9,5.7
+Börde,15083,ST,Ländlicher Raum,4.9,5.7
+Landau,7313,RP,Verdichtetes Umland,4.8,5.7
+Karlsruhe,8212,BW,Kernstädte,4.8,5.7
+Böblingen,8115,BW,Verdichtetes Umland,4.8,5.7
+Deggendorf,9271,BY,Ländlicher Raum,4.8,5.7
+Kelheim,9273,BY,Ländliches Umland,4.8,5.7
+Ingolstadt,9161,BY,Kernstädte,4.8,5.7
+Kulmbach,9477,BY,Ländlicher Raum,4.8,5.7
+Nürnberger Land,9574,BY,Verdichtetes Umland,4.8,5.7
+Forchheim,9474,BY,Ländliches Umland,4.8,5.7
+Nordwestmecklenburg,13074,MV,Ländliches Umland,4.8,5.7
+Weimarer Land,16071,TH,Verdichtetes Umland,4.8,5.7
+Erzgebirgskreis,14521,SN,Verdichtetes Umland,4.8,5.7
+Görlitz,14626,SN,Ländlicher Raum,4.8,5.7
+Zwickau,14524,SN,Verdichtetes Umland,4.8,5.7
+Baden-Baden,8211,BW,Verdichtetes Umland,4.7,5.7
+Emmendingen,8316,BW,Verdichtetes Umland,4.7,5.7
+Neu-Ulm,9775,BY,Verdichtetes Umland,4.7,5.7
+Cham,9372,BY,Ländlicher Raum,4.7,5.7
+Rosenheim,9163,BY,Verdichtetes Umland,4.7,5.7
+Oberspreewald-Lausitz,12066,BB,Ländlicher Raum,4.7,5.7
+Harz,15085,ST,Ländliches Umland,4.7,5.7
+Breisgau-Hochschwarzwald,8315,BW,Verdichtetes Umland,4.6,5.7
+Stuttgart,8111,BW,Kernstädte,4.6,5.7
+Ravensburg,8436,BW,Verdichtetes Umland,4.6,5.7
+Lörrach,8336,BW,Verdichtetes Umland,4.6,5.7
+Konstanz,8335,BW,Verdichtetes Umland,4.6,5.7
+Alb-Donau-Kreis,8425,BW,Ländliches Umland,4.6,5.7
+Starnberg,9188,BY,Verdichtetes Umland,4.6,5.7
+Landsberg,9181,BY,Ländliches Umland,4.6,5.7
+Schwandorf,9376,BY,Ländlicher Raum,4.6,5.7
+Ostallgäu,9777,BY,Ländlicher Raum,4.6,5.7
+Ansbach,9561,BY,Ländlicher Raum,4.6,5.7
+Lk.Rostock,13072,MV,Ländlicher Raum,4.6,5.7
+Wittenberg,15091,ST,Ländlicher Raum,4.6,5.7
+Weimar,16055,TH,Verdichtetes Umland,4.6,5.7
+Bodenseekreis,8435,BW,Verdichtetes Umland,4.5,5.7
+Heidenheim,8135,BW,Verdichtetes Umland,4.5,5.7
+Waldshut,8337,BW,Ländliches Umland,4.5,5.7
+Schwarzwald-Baar-Kreis,8326,BW,Verdichtetes Umland,4.5,5.7
+Freising,9178,BY,Verdichtetes Umland,4.5,5.7
+Weilheim-Schongau,9190,BY,Ländliches Umland,4.5,5.7
+Passau,9262,BY,Ländliches Umland,4.5,5.7
+Spree-Neiße,12071,BB,Ländlicher Raum,4.5,5.7
+Salzlandkreis,15089,ST,Ländliches Umland,4.5,5.7
+Sigmaringen,8437,BW,Ländliches Umland,4.4,5.7
+Ulm,8421,BW,Kernstädte,4.4,5.7
+Neumarkt,9373,BY,Ländlicher Raum,4.4,5.7
+Lindau,9776,BY,Verdichtetes Umland,4.4,5.7
+Bad Tölz-Wolfratshausen,9173,BY,Ländlicher Raum,4.4,5.7
+Traunstein,9189,BY,Ländliches Umland,4.4,5.7
+Altmarkkreis Salzwedel,15081,ST,Ländliches Umland,4.4,5.7
+Esslingen,8116,BW,Verdichtetes Umland,4.3,5.7
+Ortenaukreis,8317,BW,Verdichtetes Umland,4.3,5.7
+Lk.Rosenheim,9187,BY,Verdichtetes Umland,4.3,5.7
+Tirschenreuth,9377,BY,Ländlicher Raum,4.3,5.7
+Ludwigslust-Parchim,13076,MV,Ländlicher Raum,4.3,5.7
+Vorpommern-Rügen,13073,MV,Ländlicher Raum,4.3,5.7
+Frankfurt(Oder),12053,BB,Ländliches Umland,4.3,5.7
+Jerichower Land,15086,ST,Ländlicher Raum,4.3,5.7
+Tübingen,8416,BW,Verdichtetes Umland,4.2,5.7
+Lk.Ansbach,9571,BY,Ländlicher Raum,4.2,5.7
+Prignitz,12070,BB,Ländlicher Raum,4.2,5.7
+Eichsfeld,16061,TH,Ländliches Umland,4.2,5.7
+Unstrut-Hainich-Kreis,16064,TH,Ländlicher Raum,4.2,5.7
+Rottweil,8325,BW,Verdichtetes Umland,4.1,5.7
+Ostalbkreis,8136,BW,Verdichtetes Umland,4.1,5.7
+Reutlingen,8415,BW,Verdichtetes Umland,4.1,5.7
+Lk.Passau,9275,BY,Ländliches Umland,4.1,5.7
+Weiden,9363,BY,Ländlicher Raum,4.1,5.7
+Eichstätt,9176,BY,Ländliches Umland,4.0,5.7
+Garmisch-Partenkirchen,9180,BY,Ländlicher Raum,4.0,5.7
+Mecklenburgische Seenplatte,13071,MV,Ländlicher Raum,4.0,5.7
+Göppingen,8117,BW,Verdichtetes Umland,3.9,5.7
+Freudenstadt,8237,BW,Ländliches Umland,3.8,5.7
+Memmingen,9764,BY,Ländliches Umland,3.8,5.7
+Unterallgäu,9778,BY,Ländliches Umland,3.8,5.7
+Miesbach,9182,BY,Ländliches Umland,3.8,5.7
+Biberach,8426,BW,Ländliches Umland,3.7,5.7
+Zollernalbkreis,8417,BW,Verdichtetes Umland,3.7,5.7
+Neustadt,9374,BY,Ländlicher Raum,3.6,5.7
+Freyung-Grafenau,9272,BY,Ländlicher Raum,3.6,5.7
+Tuttlingen,8327,BW,Verdichtetes Umland,3.2,5.7
+Schwäbisch Hall,8127,BW,Ländliches Umland,3.0,5.7
